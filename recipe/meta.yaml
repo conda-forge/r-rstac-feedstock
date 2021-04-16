@@ -1,4 +1,4 @@
-{% set version = '0.9.0' %}
+{% set version = "0.9.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rstac_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rstac/rstac_{{ version }}.tar.gz
-  sha256: d700f35704299da708cf9e799d14e2d671a29df900c6405f5382395200bbe1e3
+  sha256: 4fdf2acf336c073ee3e592a0fcccdc20be7f658e569aabb4001ff087012cdc4c
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,12 +45,10 @@ test:
 about:
   home: https://github.com/brazil-data-cube/rstac
   license: MIT
-  summary: Provides functions to access, search and download spacetime earth observation data
-    via SpatioTemporal Asset Catalog (STAC). This package supports the version 0.8.1
-    or higher of the STAC specification (<http://stacspec.org>).
+  summary: Provides functions to access, search and download spacetime earth observation data via SpatioTemporal Asset Catalog (STAC). This package supports the version 0.8.1 or higher of the STAC specification (<http://stacspec.org>).
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
