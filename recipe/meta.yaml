@@ -1,4 +1,4 @@
-{% set version = "0.9.1-5" %}
+{% set version = "0.9.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rstac_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rstac/rstac_{{ version }}.tar.gz
-  sha256: 6c6d0341c3fd13d61301ad0441ec87356ed2d695a3de9c650edca8c513f99622
+  sha256: 096c6b13a39463add426fa2584a23743edbfb555df250408318c292c2116cdf2
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
