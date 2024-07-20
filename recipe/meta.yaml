@@ -1,6 +1,5 @@
 {% set version = "0.9.2-5" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rstac
@@ -13,8 +12,7 @@ source:
   sha256: 82a82484eb2b3e324e13d6a3b034fa09ca8f2d32898048a5798ec4942613981b
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
