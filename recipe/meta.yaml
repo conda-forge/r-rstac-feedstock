@@ -1,4 +1,4 @@
-{% set version = "0.9.2-5" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rstac_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rstac/rstac_{{ version }}.tar.gz
-  sha256: 82a82484eb2b3e324e13d6a3b034fa09ca8f2d32898048a5798ec4942613981b
+  sha256: 0623864b7efb6ffd684834839b8196f32d9b8017add3935d21edf544efd88a08
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,16 +26,22 @@ requirements:
     - r-base
     - r-crayon
     - r-httr
+    - r-jpeg
     - r-jsonlite
     - r-lifecycle
     - r-magrittr
+    - r-png
+    - r-sf
   run:
     - r-base
     - r-crayon
     - r-httr
+    - r-jpeg
     - r-jsonlite
     - r-lifecycle
     - r-magrittr
+    - r-png
+    - r-sf
 
 test:
   commands:
@@ -43,7 +49,8 @@ test:
     - "\"%R%\" -e \"library('rstac')\""  # [win]
 
 about:
-  home: https://github.com/brazil-data-cube/rstac
+  home: https://brazil-data-cube.github.io/rstac/
+  dev_url: https://github.com/brazil-data-cube/rstac
   license: MIT
   summary: Provides functions to access, search and download spacetime earth observation data via SpatioTemporal Asset Catalog (STAC). This package supports the version 0.8.1 or higher of the STAC specification (<http://stacspec.org>).
   license_family: MIT
@@ -58,23 +65,3 @@ extra:
     - rolfsimoes
     - OldLipe
     - gqueiroz
-
-# Package: rstac
-# Title: Client Library for SpatioTemporal Asset Catalog
-# Version: 0.9.1-5
-# Authors@R: c(person("Brazil Data Cube Team", email = "brazildatacube@inpe.br", role = c("cre", "aut")), person(given = "National Institute for Space Research (INPE)", role = c("cph")))
-# Description: Provides functions to access, search and download spacetime earth observation data via SpatioTemporal Asset Catalog (STAC). This package supports the version 1.0.0 of the STAC specification (<https://github.com/radiantearth/stac-spec>). For further details see Simoes et al. (2021) <doi:10.1109/IGARSS47720.2021.9553518>.
-# License: MIT + file LICENSE
-# URL: https://github.com/brazil-data-cube/rstac
-# BugReports: https://github.com/brazil-data-cube/rstac/issues
-# Encoding: UTF-8
-# RoxygenNote: 7.1.2
-# Depends: R (>= 3.5)
-# Imports: httr, crayon, utils, magrittr, jsonlite, lifecycle
-# Suggests: covr, testthat, vcr
-# NeedsCompilation: no
-# Packaged: 2021-10-31 00:09:28 UTC; sits
-# Author: Brazil Data Cube Team [cre, aut], National Institute for Space Research (INPE) [cph]
-# Maintainer: Brazil Data Cube Team <brazildatacube@inpe.br>
-# Repository: CRAN
-# Date/Publication: 2021-10-31 21:10:02 UTC
