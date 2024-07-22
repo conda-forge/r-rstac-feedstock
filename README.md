@@ -3,11 +3,13 @@ About r-rstac-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rstac-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/brazil-data-cube/rstac
+Home: https://brazil-data-cube.github.io/rstac/
 
 Package license: MIT
 
 Summary: Provides functions to access, search and download spacetime earth observation data via SpatioTemporal Asset Catalog (STAC). This package supports the version 0.8.1 or higher of the STAC specification (<http://stacspec.org>).
+
+Development: https://github.com/brazil-data-cube/rstac
 
 Current build status
 ====================
