@@ -3,11 +3,13 @@ About r-rstac-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rstac-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/brazil-data-cube/rstac
+Home: https://brazil-data-cube.github.io/rstac/
 
 Package license: MIT
 
 Summary: Provides functions to access, search and download spacetime earth observation data via SpatioTemporal Asset Catalog (STAC). This package supports the version 0.8.1 or higher of the STAC specification (<http://stacspec.org>).
+
+Development: https://github.com/brazil-data-cube/rstac
 
 Current build status
 ====================
@@ -95,7 +97,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -145,7 +147,7 @@ Feedstock Maintainers
 
 * [@OldLipe](https://github.com/OldLipe/)
 * [@TomAugspurger](https://github.com/TomAugspurger/)
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@gqueiroz](https://github.com/gqueiroz/)
 * [@rolfsimoes](https://github.com/rolfsimoes/)
 
