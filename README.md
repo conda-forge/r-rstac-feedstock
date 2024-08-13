@@ -147,7 +147,7 @@ Feedstock Maintainers
 
 * [@OldLipe](https://github.com/OldLipe/)
 * [@TomAugspurger](https://github.com/TomAugspurger/)
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@gqueiroz](https://github.com/gqueiroz/)
 * [@rolfsimoes](https://github.com/rolfsimoes/)
 
